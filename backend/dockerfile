@@ -1,0 +1,5 @@
+FROM python:3.8
+WORKDIR /app
+COPY . /app
+RUN pip install flask pandas flask_cors sqlalchemy psycopg2
+CMD ["python","main.py"]
